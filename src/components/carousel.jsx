@@ -1,11 +1,30 @@
 import React from "react";
+import { Carousel} from "@material-tailwind/react";
 
-export function Carousel() {
+import render1 from '../assets/img/carousel1.png'
+import render2 from '../assets/img/carousel2.png'
+
+
+export function CarouselBanner() {
     return (
-        <div className="w-full h-[500px] flex flex-row items-center justify-center bg-slate-200">
-            
-
-            
+        <div className="w-full h-auto flex flex-row items-center justify-center bg-white py-10">
+            <Carousel 
+                transition={{ duration: 1 }} 
+                className="w-[85%] h-auto"
+                loop={true}
+                autoplay={true}
+                >
+                <img
+                    src={render1}
+                    alt="image 1"
+                    className="h-full w-full object-cover"
+                />
+                <img
+                    src={render2}
+                    alt="image 1"
+                    className="h-full w-full object-cover"
+                />
+            </Carousel>
         </div>
-    )
+    );
 }
