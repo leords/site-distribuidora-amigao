@@ -1,7 +1,7 @@
 import React from "react";
 import { FacebookLogo, InstagramLogo, WhatsappLogo  } from "@phosphor-icons/react";
 
-import renderLogo from '../assets/img/amigaoLogoVertical.png';
+import renderLogo from '../assets/logo/amigaoLogoVertical.png';
 
 export function Header() {
     return(

@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel} from "@material-tailwind/react";
 
-import render1 from '../assets/img/carousel1.png'
-import render2 from '../assets/img/carousel2.png'
+import render1 from '../assets/img/carousel/carousel1.png'
+import render2 from '../assets/img/carousel/carousel2.png'
 
 
 export function CarouselBanner() {
