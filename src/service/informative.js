@@ -18,65 +18,58 @@ import renderSoda6 from '../assets/logo/soda/sprite.png';
 import renderWater1 from '../assets/logo/water/catarinense.png';
 
 
+export class CompanyHistory {
+    history = {
+        description: 'Compartilhando uma jornada de amizade e comprometimento, a Amigão Distribuidora de Bebidas, localizada em Canoinhas - SC e região, surgiu como um projeto entre amigos apaixonados pelo mundo das bebidas. Fundada em um espírito de parceria e camaradagem, nossa empresa tem como objetivo principal criar um ambiente amigável e acolhedor tanto para nossos colaboradores quanto para nossos clientes. Nossa trajetória se baseia na experiência e no conhecimento de nossos fundadores, que já tinham uma sólida presença no mercado de bebidas. Ao unir nossas forças, buscamos não apenas expandir nosso negócio, mas também criar uma marca que representa qualidade, confiabilidade e, claro, amizade. Nosso compromisso é crescer e evoluir constantemente, estabelecendo relações sólidas com nossos clientes e fornecedores. Acreditamos que, à medida que aumentamos nossa base de clientes e parceiros, estamos construindo uma rede de amizades que durará por muitos anos. Queremos que o nome "Amigão" seja sinônimo de excelência e amizade em todos os nossos atendimentos. Estamos focados em oferecer produtos de alta qualidade, um serviço excepcional e, mais do que tudo, construir relacionamentos duradouros. A Amigão Distribuidora de Bebidas está comprometida em ser a sua escolha de confiança no mundo das bebidas, e estamos ansiosos para continuar nossa jornada ao seu lado, tornando cada momento especial, refrescante e, acima de tudo, amigável.'
+        }
+    }
+
+
 export class Clouds {
     constructor() {
         this.cloud = {
             firstBeer: {
-                name: 'Brahma',
                 img: renderBeer2
             },
             secondtBeer: {
-                name: 'Skol',
                 img: renderBeer6
             },
             thirdtBeer: {
-                name: 'Antarctica',
                 img: renderBeer1
             },
             fourthtBeer: {
-                name: 'Kaiser',
                 img: renderBeer4
             },
             fifthtBeer: {
-                name: 'Heineken',
                 img: renderBeer3
             },
             sixthtBeer: {
-                name: 'Spoller',
                 img: renderBeer7
             },
             seventhtBeer: {
-                name: 'Original',
                 img: renderBeer5
             },
 
             firstSoda: {
-                name: 'Coca-Cola',
                 img: renderSoda2
             },
             secondSoda: {
-                name: 'Guaraná Antarctica',
                 img: renderSoda4
             },
             thirdSoda: {
-                name: 'Pepsi',
                 img: renderSoda5
             },
             fourthSoda: {
-                name: 'Sprite',
                 img: renderSoda6
             },
             fifthSoda: {
-                name: 'Água da Serra',
                 img: renderSoda1
             },
             fifthSoda: {
-                name: 'Fanta',
                 img: renderSoda3
             },
 
             firstWater: {
-                name: 'Serra Catarinense',
                 img: renderWater1
             }
         }
@@ -84,9 +77,7 @@ export class Clouds {
 }
     
 
-
-
-export class information {
+export class Information {
     constructor() {
         this.date = {
             address: 'R. Pastor George Weger',
@@ -100,7 +91,7 @@ export class information {
     }
 }
 
-export class contact {
+export class Contact {
     constructor() {
         this.socialNetwork ={
             fone: '(47) 3622-4126',

@@ -3,6 +3,7 @@ import { Carousel} from "@material-tailwind/react";
 
 import render1 from '../assets/img/carousel/carousel1.png'
 import render2 from '../assets/img/carousel/carousel2.png'
+import render3 from '../assets/img/carousel/carousel3.png'
 
 
 export function CarouselBanner() {
@@ -18,9 +19,14 @@ export function CarouselBanner() {
                     src={render1}
                     alt="image 1"
                     className="h-full w-full object-cover"
-                />
+                /> 
                 <img
                     src={render2}
+                    alt="image 1"
+                    className="h-full w-full object-cover"
+                />
+                <img
+                    src={render3}
                     alt="image 1"
                     className="h-full w-full object-cover"
                 />

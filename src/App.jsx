@@ -2,6 +2,7 @@ import React from "react"
 import { Header } from "./components/header"
 import { CarouselBanner } from "./components/carousel"
 import { CarouselCard } from "./components/carouselCard"
+import { History } from "./components/history"
 
 export function App() {
   return (
@@ -9,6 +10,7 @@ export function App() {
       <div  className="w-[75%] h-auto flex flex-col items-center justify-start">
         <Header />
         <CarouselBanner />
+        <History />
         <CarouselCard />
       </div>
     </div>
