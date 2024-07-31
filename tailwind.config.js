@@ -19,6 +19,7 @@ module.exports = withMT({
       },
       fontFamily: {
         sans: ["League Spartan", 'sans-serif'],
+        mount: ["Montserrat", 'sans-serif']
       },
       colors: {
         red: {
@@ -32,7 +33,7 @@ module.exports = withMT({
           light: '#FFF176',
         },
         orange: {
-          dark: '#FF8C00',
+          dark: '#FFBF00',
           DEFAULT: '#FFA500',
           light: '#FFB74D',
         },

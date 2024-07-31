@@ -3,6 +3,7 @@ import { Header } from "./components/header"
 import { CarouselBanner } from "./components/carousel"
 import { CarouselCard } from "./components/carouselCard"
 import { History } from "./components/history"
+import { Numbers } from "./components/numbers"
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
         <CarouselBanner />
         <History />
         <CarouselCard />
+        <Numbers />
       </div>
     </div>
   )

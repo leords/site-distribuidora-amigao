@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import {CompanyHistory} from '../service/informative'
-import renderHands from '../assets/img/history/hans2.jpg';
+import renderHands from '../assets/img/history/hands.jpg';
 
 export function History() {
 

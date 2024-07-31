@@ -21,8 +21,17 @@ import renderWater1 from '../assets/logo/water/catarinense.png';
 export class CompanyHistory {
     history = {
         description: 'Compartilhando uma jornada de amizade e comprometimento, a Amigão Distribuidora de Bebidas, localizada em Canoinhas - SC e região, surgiu como um projeto entre amigos apaixonados pelo mundo das bebidas. Fundada em um espírito de parceria e camaradagem, nossa empresa tem como objetivo principal criar um ambiente amigável e acolhedor tanto para nossos colaboradores quanto para nossos clientes. Nossa trajetória se baseia na experiência e no conhecimento de nossos fundadores, que já tinham uma sólida presença no mercado de bebidas. Ao unir nossas forças, buscamos não apenas expandir nosso negócio, mas também criar uma marca que representa qualidade, confiabilidade e, claro, amizade. Nosso compromisso é crescer e evoluir constantemente, estabelecendo relações sólidas com nossos clientes e fornecedores. Acreditamos que, à medida que aumentamos nossa base de clientes e parceiros, estamos construindo uma rede de amizades que durará por muitos anos. Queremos que o nome "Amigão" seja sinônimo de excelência e amizade em todos os nossos atendimentos. Estamos focados em oferecer produtos de alta qualidade, um serviço excepcional e, mais do que tudo, construir relacionamentos duradouros. A Amigão Distribuidora de Bebidas está comprometida em ser a sua escolha de confiança no mundo das bebidas, e estamos ansiosos para continuar nossa jornada ao seu lado, tornando cada momento especial, refrescante e, acima de tudo, amigável.'
-        }
     }
+}
+
+export class informationPoints {
+    points = {
+        clients: 620,
+        products: 380,
+        clouds: 51,
+        orders: 68521
+    }
+}
 
 
 export class Clouds {

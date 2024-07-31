@@ -35,7 +35,7 @@ export function CarouselCard() {
             <div className="w-[85%] h-auto flex flex-row justify-center items-center">
                     <Slider
                         {...settings}
-                        className="w-full h-auto flex flex-row items-center justify-center ">
+                        className="w-full h-auto flex flex-row items-center justify-center pl-6">
 
                         {clouds.length > 0 ? (
                             clouds.map((cloudItem, index) => (
