@@ -4,6 +4,7 @@ import { CarouselBanner } from "./components/carousel"
 import { CarouselCard } from "./components/carouselCard"
 import { History } from "./components/history"
 import { Numbers } from "./components/numbers"
+import { Footer } from "./components/footer"
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <History />
         <CarouselCard />
         <Numbers />
+        <Footer />
       </div>
     </div>
   )
