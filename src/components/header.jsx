@@ -7,8 +7,24 @@ export function Header() {
     return(
         <div className="w-full h-auto flex flex-col items-center justify-center bg-white pb-16">
             <div className="h-[42px] w-full flex flex-row items-center justify-end gap-3 px-10 mt-4">
-                <FacebookLogo size={28} className="text-red-dark hover:size-[30px] hover:text-orange-dark"/>
-                <InstagramLogo size={28} className="text-red-dark hover:size-[30px] hover:text-orange-dark "/>
+                <a                     
+                href="https://www.facebook.com/profile.php?id=100068341794040"
+                target="_blank">
+                    <FacebookLogo 
+                        size={28} 
+                        className="text-red-dark hover:size-[30px] hover:text-orange-dark"
+                    />
+                </a>
+                <a 
+                href="https://www.instagram.com/distribuidora_do_amigao/"
+                target="_blank"
+                >
+                    <InstagramLogo 
+                        size={28} 
+                        className="text-red-dark hover:size-[30px] hover:text-orange-dark "
+                />
+
+                </a>
             </div>
             <div className="h-auto flex flex-row items-center justify-center m-4">
                 <img 
@@ -19,14 +35,11 @@ export function Header() {
             </div>
             <div className="w-[80%] h-auto flex flex-row items-center justify-center my-4">
                 <div className="w-[100%] flex flex-row items-center justify-center gap-x-16">
-                    <h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark focus:text-orange-dark">Inicio</h1>
-                    <h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Nossas Marcas</h1>
-                    <h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Cidades de Atendimento</h1>
-                    <h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Amigão</h1>
-                    <h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Contato</h1>
-                </div>
-                <div className="w-[20%] flex flex-row items-start justify-end">
-                    <button className="bg-red-dark p-2 text-sm text-white rounded-md font-sans shadow-sm px-4 hover:bg-red-light ">Fale com a gente!</button>
+                    <a href="#header"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark focus:text-orange-dark">Inicio</h1></a> 
+                    <a href="#marcas"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Nossas Marcas</h1></a> 
+                    <a href="#history"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Amigão</h1></a>
+                    <a href=""><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Cidades de Atendimento</h1></a>
+                    <a href=""><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Contato</h1></a>
                 </div>
             
 

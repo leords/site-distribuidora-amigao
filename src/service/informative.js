@@ -7,14 +7,12 @@ import renderBeer4 from '../assets/logo/beer/kaiser.png';
 import renderBeer5 from '../assets/logo/beer/original.jpeg';
 import renderBeer6 from '../assets/logo/beer/skol.png';
 import renderBeer7 from '../assets/logo/beer/spoller.png';
-
 import renderSoda1 from '../assets/logo/soda/aguadaserra.png';
 import renderSoda2 from '../assets/logo/soda/coca.png';
 import renderSoda3 from '../assets/logo/soda/fanta.png';
 import renderSoda4 from '../assets/logo/soda/guarana.png';
 import renderSoda5 from '../assets/logo/soda/pepsi.png';
 import renderSoda6 from '../assets/logo/soda/sprite.png';
-
 import renderWater1 from '../assets/logo/water/catarinense.png';
 
 

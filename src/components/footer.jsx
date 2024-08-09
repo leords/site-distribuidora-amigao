@@ -68,7 +68,10 @@ export function Footer() {
                         <div className="flex flex-col items-start justify-start gap-2 p-2">
                             <p className="font-sans text-[16px] font-[100]">R. Pastor George Weger, 120 - Centro</p>
                             <p className="font-sans text-[16px] font-[100]">Canoinhas - SC, 89460-144</p>
-                            <p className="flex flex-row gap-2 font-sans text-[16px] font-[600] text-red-dark">CNPJ: <p className="font-sans text-[16px] font-[100] text-black">41.836.758/0001-41</p></p>
+                            <div className="flex flex-row gap-2">
+                                <p className="font-sans text-[16px] font-[600] text-red-dark">CNPJ:</p>
+                                <p className="font-sans text-[16px] font-[100] text-black">41.836.758/0001-41</p>
+                            </div>
                         </div>
                         
                     </div>
