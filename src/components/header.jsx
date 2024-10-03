@@ -1,50 +1,72 @@
-import React from "react";
-import { FacebookLogo, InstagramLogo, WhatsappLogo  } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo} from "@phosphor-icons/react";
 
 import renderLogo from '../assets/logo/amigaoLogoVertical.png';
 
 export function Header() {
-    return(
+    return (
         <div className="w-full h-auto flex flex-col items-center justify-center bg-white pb-16">
-            <div className="h-[42px] w-full flex flex-row items-center justify-end gap-3 px-10 mt-4">
-                <a                     
-                href="https://www.facebook.com/profile.php?id=100068341794040"
-                target="_blank">
-                    <FacebookLogo 
-                        size={28} 
-                        className="text-red-dark hover:size-[30px] hover:text-orange-dark"
-                    />
-                </a>
-                <a 
-                href="https://www.instagram.com/distribuidora_do_amigao/"
-                target="_blank"
-                >
-                    <InstagramLogo 
-                        size={28} 
-                        className="text-red-dark hover:size-[30px] hover:text-orange-dark "
-                />
-
-                </a>
+          {/* Redes Sociais */}
+          <div className="w-full h-[42px] flex flex-row items-center justify-end gap-6 px-10 mt-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=100068341794040"
+              target="_blank"
+              className="transition-transform transform hover:scale-110"
+            >
+              <FacebookLogo size={28} className="text-red-dark hover:text-orange-dark" />
+            </a>
+            <a
+              href="https://www.instagram.com/distribuidora_do_amigao/"
+              target="_blank"
+              className="transition-transform transform hover:scale-110"
+            >
+              <InstagramLogo size={28} className="text-red-dark hover:text-orange-dark" />
+            </a>
+          </div>
+      
+          {/* Logo */}
+          <div className="h-auto flex items-center justify-center mt-6">
+            <img
+              src={renderLogo}
+              alt="Logo da empresa, carrinho de compras seguido do nome da empresa, com determinada paleta de cores."
+              className="w-80 md:w-96 object-contain"
+            />
+          </div>
+      
+          {/* Menu de Navegação */}
+          <div className="w-[85%] h-auto flex flex-row items-center justify-center mt-8">
+            <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8">
+              <a
+                href="#header"
+                className="font-sans text-black font-semibold text-[20px] hover:text-red-dark transition-all"
+              >
+                Início
+              </a>
+              <a
+                href="#marcas"
+                className="font-sans text-black font-semibold text-[20px] hover:text-red-dark transition-all"
+              >
+                Nossas Marcas
+              </a>
+              <a
+                href="#history"
+                className="font-sans text-black font-semibold text-[20px] hover:text-red-dark transition-all"
+              >
+                Amigão
+              </a>
+              <a
+                href="#cities"
+                className="font-sans text-black font-semibold text-[20px] hover:text-red-dark transition-all"
+              >
+                Cidades de Atendimento
+              </a>
+              <a
+                href="#contact"
+                className="font-sans text-black font-semibold text-[20px] hover:text-red-dark transition-all"
+              >
+                Contato
+              </a>
             </div>
-            <div className="h-auto flex flex-row items-center justify-center m-4">
-                <img 
-                    src={renderLogo}
-                    alt="Logo da empresa, carrinho de compras seguido do nome da empresa, com determiada paleta de cores."
-                    className="w-96 m-4"
-                />
-            </div>
-            <div className="w-[80%] h-auto flex flex-row items-center justify-center my-4">
-                <div className="w-[100%] flex flex-row items-center justify-center gap-x-16">
-                    <a href="#header"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark focus:text-orange-dark">Inicio</h1></a> 
-                    <a href="#marcas"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Nossas Marcas</h1></a> 
-                    <a href="#history"><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Amigão</h1></a>
-                    <a href=""><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Cidades de Atendimento</h1></a>
-                    <a href=""><h1 className="font-sans text-black font-[500] text-[22px] hover:text-red-dark">Contato</h1></a>
-                </div>
-            
-
-            </div>
-
+          </div>
         </div>
-    )
+      );
 }

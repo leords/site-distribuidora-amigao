@@ -1,4 +1,3 @@
-import React from "react";
 import { Carousel} from "@material-tailwind/react";
 
 import render1 from '../assets/img/carousel/carousel1.png'
@@ -14,21 +13,21 @@ export function CarouselBanner() {
                 className="w-[85%] h-auto"
                 loop={true}
                 autoplay={true}
-                >
+            >
                 <img
                     src={render1}
-                    alt="image 1"
-                    className="h-full w-full object-cover"
+                    alt="Imagem 1"
+                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 /> 
                 <img
                     src={render2}
-                    alt="image 1"
-                    className="h-full w-full object-cover"
+                    alt="Imagem 2"
+                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 />
                 <img
                     src={render3}
-                    alt="image 1"
-                    className="h-full w-full object-cover"
+                    alt="Imagem 3"
+                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 />
             </Carousel>
         </div>

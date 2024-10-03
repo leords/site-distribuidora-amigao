@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import { Card } from './card';
 import { Clouds } from '../service/informative';
@@ -27,31 +27,29 @@ export function CarouselCard() {
         }, []); 
 
 
-    return(
-        <div className="w-[100%] h-auto flex flex-col items-center justify-center pt-10 pb-20">
-            <div className="w-[85%] h-auto flex flex-row justify-start items-center mb-10">
-                <h1 className="font-sans text-red-dark font-[600] text-[42px]">Nossas Marcas</h1>
-            </div>
-            <div className="w-[85%] h-auto flex flex-row justify-center items-center">
+        return (
+            <div className="w-full h-auto flex flex-col items-center justify-center pt-10 pb-20">
+                <div className="w-11/12 lg:w-4/5 h-auto flex flex-row justify-start items-center mb-10">
+                    <h1 className="font-sans text-red-600 font-semibold text-3xl lg:text-4xl">Nossas Marcas</h1>
+                </div>
+                <div className="w-11/12 lg:w-4/5 h-auto flex justify-center items-center">
                     <Slider
                         {...settings}
-                        className="w-full h-auto flex flex-row items-center justify-center pl-6">
-
+                        className="w-full h-auto flex items-center justify-center pl-4 sm:pl-6">
+                        
                         {clouds.length > 0 ? (
                             clouds.map((cloudItem, index) => (
                                 <div
                                     key={index}
-                                    className="flex flex-row items-center justify-center"
-                                >
+                                    className="flex items-center justify-center px-4">
                                     <Card image={cloudItem.img} />
                                 </div>
                             ))
                         ) : (
                             <p>Not found</p>
-                    )}
+                        )}
                     </Slider>
+                </div>
             </div>
-
-        </div>
-    )
+        );
 }
