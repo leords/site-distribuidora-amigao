@@ -6,7 +6,7 @@ export function Delivery() {
     return (
         <div className="w-full h-auto flex flex-col items-center justify-center mb-20">
           <div className="w-[85%] h-auto flex flex-col md:flex-row justify-between items-center">
-            <div className="w-full md:w-[50%] flex items-center justify-center mb-10 md:mb-0 rounded-xl shadow-md">
+            <div className="w-full md:w-[50%] flex items-center justify-center mb-10 md:mb-0 rounded-xl">
               <img
                 src={renderImageDelivery}
                 alt="Amigão Delivery"

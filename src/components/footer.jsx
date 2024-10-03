@@ -4,7 +4,7 @@ import { FacebookLogo, InstagramLogo, WhatsappLogo, Clock  } from '@phosphor-ico
 
 export function Footer() {
     return (
-        <div className="w-full h-auto flex justify-center items-center bg-gray-100 py-12">
+        <div className="w-full h-auto flex justify-center items-cente py-12">
           <div className="w-[90%] lg:w-[85%] flex flex-col lg:flex-row justify-between items-start p-8 bg-yellow-dark rounded-t-xl">
             {/* Logo e Chamada */}
             <div className="flex flex-col items-center justify-center mb-8 lg:mb-0 lg:mr-16">
