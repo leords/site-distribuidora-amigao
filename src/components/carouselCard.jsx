@@ -28,9 +28,9 @@ export function CarouselCard() {
 
 
         return (
-            <div className="w-full h-auto flex flex-col items-center justify-center pt-10 pb-20">
+            <div className="w-full h-auto flex flex-col items-center justify-center pt-20 pb-36">
                 <div className="w-11/12 lg:w-4/5 h-auto flex flex-row justify-start items-center mb-10">
-                    <h1 className="font-sans text-red-600 font-semibold text-3xl lg:text-4xl">Nossas Marcas</h1>
+                    <h1 className="font-sans text-red-dark font-semibold text-3xl lg:text-4xl">Nossas Marcas</h1>
                 </div>
                 <div className="w-11/12 lg:w-4/5 h-auto flex justify-center items-center">
                     <Slider

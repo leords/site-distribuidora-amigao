@@ -17,17 +17,17 @@ export function CarouselBanner() {
                 <img
                     src={render1}
                     alt="Imagem 1"
-                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
+                    className="h-auto w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 /> 
                 <img
                     src={render2}
                     alt="Imagem 2"
-                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
+                    className="h-auto  w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 />
                 <img
                     src={render3}
                     alt="Imagem 3"
-                    className="h-[300px] w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
+                    className="h-auto  w-full object-cover rounded-lg" // Ajuste a altura conforme necessário
                 />
             </Carousel>
         </div>

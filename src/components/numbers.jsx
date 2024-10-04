@@ -29,7 +29,7 @@ export function Numbers() {
 
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center mb-20">
-        <div className="w-11/12 lg:w-4/5 h-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 p-10 rounded-xl bg-yellow-400">
+        <div className="w-11/12 lg:w-4/5 h-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 p-10 rounded-xl bg-yellow-dark">
             <div className="flex flex-col items-center justify-center p-2 gap-3">
                 <Storefront 
                     size={60} 

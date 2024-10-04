@@ -1,8 +1,22 @@
-//import { WhatsappLogo } from '@phosphor-icons/react'
-
 import renderImageDelivery from '../assets/img/delivery/delivery-img.png';
+import emailjs from 'emailjs-com';
 
 export function Delivery() {
+
+  function sendEmail(e) {
+    e.preventDefault();  // Evita o reload da página
+
+    console.log('e.target');
+  
+    emailjs.sendForm('service_a65ahra', 'template_p7ui3jk', e.target, 'dUerCKe8TLS-O-SL4')
+      .then((result) => {
+        console.log(result.text);
+        alert('Email enviado com sucesso!');
+      }, (error) => {
+        console.log(error.text);
+        alert('Erro ao enviar o email.');
+      });
+  }
     return (
         <div className="w-full h-auto flex flex-col items-center justify-center mb-20">
           <div className="w-[85%] h-auto flex flex-col md:flex-row justify-between items-center">
@@ -29,18 +43,30 @@ export function Delivery() {
               <p className="font-sans text-red-dark font-semibold text-lg text-center md:text-center mb-6">
                 Para contato, deixe seu número. Entraremos em contato com você!
               </p>
-              <form className="w-full max-w-xs mx-auto md:mx-0">
-                <div className="relative flex flex-col md:flex-row gap-4 items-center">
+              
+              <form 
+                className="w-full flex flex-col items-center justify-center gap-2"
+                onSubmit={sendEmail}>
+
                   <input
-                    className="w-full md:w-56 h-10 rounded-lg border-2 border-red-300 hover:border-red-600 focus:outline-none focus:ring-red-600 p-2"
+                    className="w-[70%] font-[200] h-10 rounded-lg border-2 border-red-300 hover:border-red-600 focus:outline-none focus:ring-red-600 p-2 pl-4"
+                    name="user_name"
                     type="text"
+                    placeholder="Digite seu nome"
+                  />
+                  <input
+                    className="w-[70%] font-[200] h-10 rounded-lg border-2 border-red-300 hover:border-red-600 focus:outline-none focus:ring-red-600 p-2 pl-4"
+                    name="user_phone"
+                    type="tel"
                     placeholder="Digite seu número"
                   />
-                  <button className="w-full md:w-20 h-10 rounded-md bg-red-600 hover:bg-red-400 text-white font-semibold">
-                    Enviar
+                  <button 
+                  type="submit"
+                  className="w-[40%] h-10 rounded-md bg-red-dark hover:bg-green-500 text-white font-semibold mt-5">
+                    Enviar número
                   </button>
-                </div>
               </form>
+
             </div>
           </div>
         </div>
